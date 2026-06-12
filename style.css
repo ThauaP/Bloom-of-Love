@@ -63,9 +63,9 @@ img {
   align-items: center;
   gap: 10px;
   font-weight: 800;
-  color: var(--verde-escuro);
+  color: var(--rosa);
   letter-spacing: -0.02em;
-  font-size: 1.12rem;
+  font-size: 1.87rem;
 }
 
 .marca img {
@@ -149,7 +149,7 @@ img {
   font-size: clamp(2.5rem, 6vw, 5.8rem);
   line-height: 0.98;
   margin: 14px 0 22px;
-  color: var(--verde-escuro);
+  color: rgb(88, 59, 64);
   letter-spacing: -0.07em;
 }
 
@@ -190,9 +190,22 @@ img {
 .hero-imagem {
   margin: 0;
   padding: 28px;
-  border-radius: 42px;
+  border-radius: 48px;
   background: linear-gradient(145deg, var(--rosa-claro), var(--verde-claro));
   box-shadow: var(--sombra);
+  align-self: start;
+  transform: translateY(43px);
+  transition: transform 0.25s ease;
+  overflow: hidden;
+
+}
+
+.hero-imagem img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 42px;
 }
 
 .faixa {
@@ -456,6 +469,11 @@ img {
   .hero {
     padding-top: 42px;
     min-height: auto;
+  }
+
+  .hero-imagem {
+    transform: none;
+    align-self: auto;
   }
 
   .faixa,
